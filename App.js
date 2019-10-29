@@ -12,12 +12,11 @@ export default class App extends Component {
   _handleVideoRef = ref => {
     this.playbackObject = ref;
   }
-  _onPressButton = () => {
+  _onTapVideo = () => {
     this.playbackObject.getStatusAsync().then(status=> {
       this.setState({time: status.positionMillis})
     });
   }
-
   render() {
     return (
       <View 
@@ -25,7 +24,7 @@ export default class App extends Component {
       >
         <Text>Playback position when tapped: {this.state.time}ms</Text>
         <TouchableOpacity
-          onPress={this._onPressButton}
+          onPress={this._onTapVideo}
         >
           <Video
             ref={this._handleVideoRef}
@@ -43,7 +42,6 @@ export default class App extends Component {
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
