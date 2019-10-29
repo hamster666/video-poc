@@ -2,6 +2,8 @@
 ## The challenge: 
 Using a Http Live Streaming (HLS) video, get the video playback position when the video is tapped. 
 
+Look in App.js
+
 ## Expo guide
 https://expo.io/learn
 
