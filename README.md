@@ -15,4 +15,5 @@ npm start
 
 ## Docs for Expo video and AV 
 https://docs.expo.io/versions/v35.0.0/sdk/video/
+
 https://docs.expo.io/versions/v35.0.0/sdk/av/
